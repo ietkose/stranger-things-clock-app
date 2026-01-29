@@ -19,7 +19,7 @@ class TimerTab(QWidget):
         # the biggest screen that shows remain time
         self.display_label = QLabel("00:00", self)
         self.display_label.setAlignment(Qt.AlignCenter)
-        self.display_label.setObjectName("timer_display") # CSS için ID
+        self.display_label.setObjectName("timer_display") # for CSS
 
         # for selecting duration
         input_layout = QHBoxLayout()
@@ -28,13 +28,13 @@ class TimerTab(QWidget):
         self.min_input = QSpinBox(self)
         self.min_input.setRange(0, 120) # max 120 minutes
         self.min_input.setValue(25)     # default Pomodoro time 
-        self.min_input.setSuffix(" dk") 
+        self.min_input.setSuffix(" min") 
         self.min_input.setObjectName("spin_input")
 
         # second selector
         self.sec_input = QSpinBox(self)
         self.sec_input.setRange(0, 59)
-        self.sec_input.setSuffix(" sn")
+        self.sec_input.setSuffix(" sec")
         self.sec_input.setObjectName("spin_input")
 
         input_layout.addWidget(self.min_input)

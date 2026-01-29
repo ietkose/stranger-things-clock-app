@@ -15,8 +15,8 @@ except ImportError as e:
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Vecna's Clock Widget")
-        self.setGeometry(480, 110, 1000, 800)
+        self.setWindowTitle("Vecna's Clock App")
+        self.setGeometry(430, 110, 1100, 800)
 
         if settings.ICON_PATH: 
             self.setWindowIcon(QIcon(settings.ICON_PATH))
