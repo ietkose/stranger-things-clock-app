@@ -113,7 +113,7 @@ class MainWindow(QMainWindow):
             QPushButton#btn_reset, QPushButton#btn_cancel {
                 background-color: #ff1515;
             }
-            QPushButton#btn_reset:hover {
+            QPushButton#btn_reset:hover, QPushButton#btn_cancel:hover {
                 background-color: #ff4d4d;
             }
 
